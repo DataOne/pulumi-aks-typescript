@@ -1,0 +1,72 @@
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+*.swp
+
+pids
+logs
+results
+tmp
+
+# Build
+public/css/main.css
+
+# Coverage reports
+coverage
+
+# API keys and secrets
+.env
+
+# Dependency directory
+node_modules
+bower_components
+
+# Editors
+.idea
+*.iml
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Ignore built ts files
+dist/**/*
+
+# ignore yarn.lock
+yarn.lock
+
+/.pulumi/
+/.vscode/
+/.vs/
+bin/
+build/
+node_modules/
+*.pyc
+.Python
+venv/
+include/
+lib/
+yarn.lock
+package-lock.json
+Pulumi.*.yaml
+.idea/
+.ionide/
+*.iml
+key.rsa*
+obj/
+vendor
+Gopkg.lock
+
+**/ci-scripts
+
+# Java app
+.gradle/
+.settings/
+.project
+.classpath
+kubeconfig.yaml
