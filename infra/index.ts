@@ -1,4 +1,3 @@
-// Copyright 2016-2020, Pulumi Corporation.  All rights reserved.
 import * as azuread from "@pulumi/azuread";
 import * as pulumi from "@pulumi/pulumi";
 import * as random from "@pulumi/random";
@@ -45,14 +44,14 @@ const cluster = new containerservice.ManagedCluster(managedClusterName, {
         mode: "System",
         name: "agentpool",
         nodeLabels: {},
-        osDiskSizeGB: 20,
+        osDiskSizeGB: 32,
         osType: "Linux",
         type: "VirtualMachineScaleSets",
         vmSize: "Standard_B2s",
     }],
     dnsPrefix: resourceGroup.name,
     enableRBAC: true,
-    kubernetesVersion: "1.20.7",
+    kubernetesVersion: "1.22.2",
     linuxProfile: {
         adminUsername: "testuser",
         ssh: {
